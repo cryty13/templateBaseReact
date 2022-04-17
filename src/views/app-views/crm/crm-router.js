@@ -5,7 +5,7 @@ import Loading from 'components/shared-components/Loading';
 const Apps = ({ match }) => (
   <Suspense fallback={<Loading cover="content"/>}>
     <Switch>
-      <Route path={`${match.url}/ecommerce`} component={lazy(() => import(`./e-commerce`))} />
+      <Route path={`${match.url}/cliente`} component={lazy(() => import(`./cliente/cliente-router`))} />
       <Redirect from={`${match.url}`} to={`${match.url}/mail`} />
     </Switch>
   </Suspense>

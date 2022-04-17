@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Card, Table, Select, Input, Button, Badge, Menu } from 'antd';
 import ProductListData from "assets/data/product-list.data.json"
 import { EyeOutlined, DeleteOutlined, SearchOutlined, PlusCircleOutlined } from '@ant-design/icons';
@@ -8,6 +8,7 @@ import Flex from 'components/shared-components/Flex'
 import NumberFormat from 'react-number-format';
 import { useHistory } from "react-router-dom";
 import utils from 'utils'
+import { getSelectCliente } from 'lib/selectAPI';
 
 const { Option } = Select
 
@@ -31,6 +32,17 @@ const ProductList = () => {
 	const [list, setList] = useState(ProductListData)
 	const [selectedRows, setSelectedRows] = useState([])
 	const [selectedRowKeys, setSelectedRowKeys] = useState([])
+	const [clienteCombo, setClienteCombo] = useState([]);
+
+
+	useEffect(() => {
+		console.log('aaaa')
+		getSelectCliente(true, false).then(function (retorno) {
+		  setClienteCombo(retorno);
+		  console.log(retorno)
+		});
+	  }, []);
+
 
 	const dropdownMenu = row => (
 		<Menu>

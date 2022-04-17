@@ -11,7 +11,7 @@ const rules = {
 	name: [
 		{
 			required: true,
-			message: 'Please enter product name',
+			message: 'Please enter product name22222',
 		}
 	],
 	description: [

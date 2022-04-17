@@ -23,14 +23,14 @@ const appsNavTree = [{
   submenu: [
     {
       key: 'apps-ecommerce',
-      path: `${APP_PREFIX_PATH}/crm/ecommerce`,
+      path: `${APP_PREFIX_PATH}/crm/cliente`,
       title: 'sidenav.apps.ecommerce',
       icon: ShoppingCartOutlined,
       breadcrumb: true,
       submenu: [
         {
           key: 'apps-ecommerce-productList',
-          path: `${APP_PREFIX_PATH}/crm/ecommerce/product-list`,
+          path: `${APP_PREFIX_PATH}/crm/cliente/cliente-list`,
           title: 'sidenav.apps.ecommerce.productList',
           icon: '',
           breadcrumb: true,
@@ -38,7 +38,7 @@ const appsNavTree = [{
         },
         {
           key: 'apps-ecommerce-addProduct',
-          path: `${APP_PREFIX_PATH}/crm/ecommerce/add-product`,
+          path: `${APP_PREFIX_PATH}/crm/cliente/cliente-add`,
           title: 'sidenav.apps.ecommerce.addProduct',
           icon: '',
           breadcrumb: false,
@@ -46,7 +46,7 @@ const appsNavTree = [{
         },
         {
           key: 'apps-ecommerce-editProduct',
-          path: `${APP_PREFIX_PATH}/crm/ecommerce/edit-product/12`,
+          path: `${APP_PREFIX_PATH}/crm/cliente/cliente-edit/12`,
           title: 'sidenav.apps.ecommerce.editProduct',
           icon: '',
           breadcrumb: false,
@@ -54,7 +54,7 @@ const appsNavTree = [{
         },
         {
           key: 'apps-ecommerce-orders',
-          path: `${APP_PREFIX_PATH}/crm/ecommerce/orders`,
+          path: `${APP_PREFIX_PATH}/crm/cliente/cliente-orders`,
           title: 'sidenav.apps.ecommerce.orders',
           icon: '',
           breadcrumb: false,
